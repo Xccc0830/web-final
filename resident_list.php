@@ -49,6 +49,8 @@ $result = $conn->query($sql);
                     <a href="resident_edit.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">編輯</a>
                     <a href="resident_delete.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm"
                        onclick="return confirm('確定要刪除嗎？');">刪除</a>
+                    <a href="violation_list.php?resident_id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">違規紀錄</a>
+
                 </td>
             </tr>
             <?php endwhile; ?>
